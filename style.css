@@ -41,6 +41,14 @@ body {
     font-weight: bold;
 }
 
+/* #start-button {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZqVw3844MW9-_Lq3xLcxUC16251AdUkr2Q&usqp=CAU);
+    background-size: 100px;
+    border: 1px black;
+    flex-wrap: wrap;
+    margin: auto;
+} */
+
 /* card styling */
 #game-container {
     display: flex;
