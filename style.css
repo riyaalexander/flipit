@@ -1,0 +1,108 @@
+title{
+    margin: auto;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header{
+    text-align: center;
+    font-family: "Press Start 2P", fantasy; 
+}
+
+body {
+    background-color: rgb(111, 116, 254);
+}
+
+#board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+    width: 365px;
+    border: 4px solid black;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Press Start 2P", fantasy;
+}
+
+#score {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* card styling */
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+#row1, #row2, #row3, #row4 {
+    width: 200%;
+    justify-content: space-between;
+}
+
+.card-back {
+    background-image: url(https://th.bing.com/th/id/OIP.9_kOXJ6lTP9T66W-q2OM4AAAAA?pid=ImgDet&w=187&h=333&c=7&dpr=2);
+    background-size: 110px;
+}
+
+.card {
+    width: 106px;
+    height: 146px;
+    position: relative;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    /* perspective: 1000px; */
+}
+
+.card-back, .card-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-size: 107px;
+    transform: rotateY(180deg);
+}
+
+.flip .card-front {
+    transform: rotateY(0deg);
+}
+
+.flip .card-back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 500px) {
+    .game-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+}
